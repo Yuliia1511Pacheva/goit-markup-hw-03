@@ -17,6 +17,13 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+.container {
+    width: 1200px;
+    border: 2px dashed rgb(236, 22, 172);
+    padding: 0 15px ;
+    margin: 0 auto;
+}
+
 .logo {
     color: var(--primary-text-color);
     font-family: Raleway, sans-serif;
@@ -91,9 +98,13 @@ body {
     letter-spacing: 0.06em;
 
     border: none;
+    border-radius: 4px;
 
     cursor: pointer;
+
+    
 }
+
 
 .hero-button:hover, .hero-button:focus {
 background-color:#188CE8;
