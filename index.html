@@ -19,7 +19,7 @@
 
 <header class="header">
    
-<div class="container">
+<div class="container header-nav">
     <nav>
         <ul class="site-nav list">
 
@@ -32,8 +32,8 @@
     </nav>
 
     <ul class="site-contacts list">
-        <li> <a lang="en" href="malito:info@devstudio.com">info@devstudio.com</a> </li>
-        <li> <a href="tel:+380961111111">+380961111111</a> </li>
+        <li> <a class="link" lang="en" href="malito:info@devstudio.com">info@devstudio.com</a> </li>
+        <li> <a class="link" href="tel:+380961111111">+380961111111</a> </li>
     </ul>
     </div>
 </header>
@@ -53,22 +53,22 @@
         <h2 hidden class="section-title">Особливості нашої роботи</h2> <!--Зробити заголовок невидимим за допомогою CSS-->
 
         <ul class="features list">
-            <li>
+            <li class="features-item" >
                <h3 class="features-name">УВАГА ДО ДЕТАЛЕЙ</h3> 
                <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
 
-            <li>
+            <li class="features-item">
                <h3  class="features-name">ПУНКТУАЛЬНІСТЬ</h3>
                <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
 
-            <li>
+            <li class="features-item">
                 <h3  class="features-name">ПЛАНУВАННЯ</h3>
                 <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
 
-            <li>
+            <li class="features-item">
                 <h3  class="features-name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                 <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
@@ -85,10 +85,10 @@
         <div class="container">
 
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="works list">
-            <li> <a href=""> <img src="./images/img(1).jpg" alt="руки людини, що набирають текс на клавіатурі" width="370" height="294"> </a> </li>
-            <li> <a href=""> <img src="./images/img-1(1).jpg" alt="людина працює на ноутбуці" width="370" height="294"> </a> </li>
-            <li> <a href=""> <img src="./images/img-2(1).jpg" alt="руки людини, що працює за планшетом" width="370" height="294"> </a> </li> 
+        <ul class="example list">
+            <li class="example-item" > <a href=""> <img src="./images/img(1).jpg" alt="руки людини, що набирають текс на клавіатурі" width="370" height="294"> </a> </li>
+            <li class="example-item" > <a href=""> <img src="./images/img-1(1).jpg" alt="людина працює на ноутбуці" width="370" height="294"> </a> </li>
+            <li class="example-item" > <a href=""> <img src="./images/img-2(1).jpg" alt="руки людини, що працює за планшетом" width="370" height="294"> </a> </li> 
         </ul>
 
         </div>
@@ -101,28 +101,37 @@
 
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list list">
-            <li> 
+            <li class="team-item"> 
                 <img class="photo" src="./images/img.jpg" alt="фото співробітника" width="270" height="260">
+            <div class="text-container">
                 <h3 class="team-subtitle">Ігор Дем'яненко</h3>
                 <p class="text" lang="en">Product Designer</p>
+            </div>
+                
             </li>
 
-            <li> 
+            <li class="team-item"> 
                 <img class="photo" src="./images/img-1.jpg" alt="фото співробітника" width="270" height="260">
+                <div class="text-container">
                 <h3 class="team-subtitle">Ольга Рєпіна</h3>
                 <p class="text" lang="en">Frontend Developer</p>
+                </div>
             </li>
 
-            <li> 
+            <li class="team-item"> 
                 <img class="photo" src="./images/img-2.jpg" alt="фото співробітника" width="270" height="260">
+                <div class="text-container">
                 <h3 class="team-subtitle">Микола Тарасов</h3>
                 <p class="text" lang="en">Marketing</p>
+                </div>
             </li>
 
-            <li> 
+            <li class="team-item"> 
                 <img class="photo" src="./images/img-3.jpg" alt="фото співробітника" width="270" height="260">
+                <div class="text-container">
                 <h3 class="team-subtitle">Михайло Єрмаков</h3>
                 <p class="text" lang="en">UI Designer</p>
+                </div>
             </li>
         </ul>
 
