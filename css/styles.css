@@ -154,8 +154,11 @@ background-color:#188CE8;
 /* ПЕРЕВАГИ */
 .features {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    /* justify-content: space-between;
+    gap: 30px; */
+}
+.features .features-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features-name {
@@ -358,5 +361,5 @@ works p{
 }
 .card {
     margin-right: -20px;
-    flex-basis: calc((100%-2*30)/3);
+    flex-basis:calc((100%-2*30)/3);
 }
