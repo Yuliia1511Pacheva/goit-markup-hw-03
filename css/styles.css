@@ -359,6 +359,5 @@ works p{
     gap: 30px;
 }
 .card {
-    
-    width: calc((100% - 2*30px) / 3);
+    flex-basis: calc((100% - 2*30px) / 3);
 }
