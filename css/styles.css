@@ -42,8 +42,7 @@ h1, h2, h3, p {
 
 .header {
     border-bottom: 1px solid #ECECEC;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 /* nav */
 .logo {
@@ -82,12 +81,15 @@ h1, h2, h3, p {
 
 .site-nav .link {
     color: var(--primary-text-color);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .site-nav .link.current {
@@ -97,11 +99,14 @@ h1, h2, h3, p {
 .site-contacts .link {
     color: var(--text-color);
     text-decoration: none;
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .site-nav .link:hover, .site-nav .link:focus,
@@ -110,7 +115,8 @@ h1, h2, h3, p {
 }
 
 /* hero */
-.hero { background-color: #000000;
+.hero {
+    background-color: #000000;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -123,10 +129,11 @@ h1, h2, h3, p {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
     margin-bottom: 30px;
-    /* max-width: 690px;
+    max-width: 690px;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
 }
 
 .hero-button {
@@ -152,6 +159,19 @@ background-color:#188CE8;
 
 
 /* ПЕРЕВАГИ */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .features {
     display: flex;
 }
@@ -186,7 +206,6 @@ background-color:#188CE8;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
 .no-padding {
     padding-top: 0;
 }
@@ -223,8 +242,8 @@ background-color:#188CE8;
         0px 2px 1px rgba(0, 0, 0, 0.2);;
 }
 
-
 .text-container {
+    background-color: var(--primary-white-color);
     width: 270px;
     padding: 30px 0px;  
 }
@@ -260,7 +279,6 @@ footer {
 
 .footer a {
     color:rgba(255, 255, 255, 0.6);
-
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -272,7 +290,6 @@ footer {
     color: var(--accent-color);
 }    
     
-
 .footer .address {
     color: var(--primary-white-color);
 }
@@ -283,22 +300,17 @@ address {
     }
 
 
-
-
 /* PORTFOLIO */
 
 /* Buttons */
-
 .filter {
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .filter-button {
     margin-right: 8px;
- 
 }
 
 .filter button {
@@ -323,7 +335,6 @@ address {
 }
 
 /* WORKS */
-
 .works .link {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -333,14 +344,17 @@ address {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+
     margin-bottom: 4px;
 }
+
 works p{
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
+
 .works-name {
     width: 370px;
     border-bottom: 1px solid #EEEEEE;
@@ -350,14 +364,17 @@ works p{
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
 .works-picture {
     display: block;
 }
+
 .works{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .card {
     flex-basis: calc((100% - 2*30px) / 3);
 }
